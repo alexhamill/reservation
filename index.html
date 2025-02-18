@@ -5,6 +5,12 @@
   <link rel="stylesheet" type="text/css" href="styles.css">
   <script src="js/init.js"></script>
   <style>
+    /* General reset for styling */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
     /* Navigation bar styling */
     ul {
@@ -37,12 +43,22 @@
       margin: 0;
     }
 
+    /* Flexbox container to align header, search bar, and address in a row */
+    .header-container {
+      display: flex;
+      justify-content: space-between; /* Space out elements */
+      align-items: center; /* Vertically center elements */
+      padding: 10px 20px;
+    }
+
     /* Search container styles */
     .search-container {
       display: flex;
-      justify-content: center;
       align-items: center;
-      margin-top: 20px;
+      border: 2px solid #ccc;
+      border-radius: 25px;
+      padding: 5px 10px;
+      background-color: white;
     }
 
     .search-bar {
@@ -70,24 +86,20 @@
     }
 
     /* Heading styles */
-    h1, h3 {
-      text-align: center;
+    h1 {
+      font-size: 24px;
       color: #333;
-    }
-
-    h3 {
-      margin-top: 10px;
     }
 
     /* Address styling */
     p {
-      text-align: center;
       font-size: 16px;
       color: #666;
     }
 
     /* Navigation bar layout fixes */
     ul {
+      text-align: center;
       background-color: #333;
     }
 
@@ -102,26 +114,23 @@
     /* Content container */
     .content {
       padding: 20px;
+      text-align: center;
     }
   </style>
 </head>
 <body>
-  <!-- Page Title -->
-  <h1>Off The Pike</h1>
+  <div class="header-container">
+    <h1>Off The Pike</h1>
 
-  <!-- Search Bar Section -->
-  <div class="search-container">
-    <input type="text" class="search-bar" placeholder="Search...">
-    <button class="search-btn">🔍</button>
-  </div>
+    <div class="search-container">
+      <input type="text" class="search-bar" placeholder="Search...">
+      <button class="search-btn">🔍</button>
+    </div>
 
-  <!-- Business Information Section -->
-  <div class="content">
     <h3>Arlington Career Center</h3>
     <p>📍 816 S. Walter Reed Drive, Arlington, VA</p>
   </div>
 
-  <!-- Navigation Menu -->
   <ul>
     <li><a class="active" href="index.html">Home</a></li>
     <li><a href="menu.html">Menu</a></li>
