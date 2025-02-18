@@ -1,9 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Home</title>
-    </head>
-    <body>
-        <h1>Off The Pike</h1>
-    </body>
+<head>
+  <title>Home Page</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script src="js/init.js"></script>
+  <style>
+
+    /* Navigation bar styling */
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+    }
+
+    li {
+      float: left;
+    }
+
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    li a:hover {
+      background-color: #111;
+    }
+
+    /* Body styles */
+    body {
+      background-color: #f7f7f7;
+      margin: 0;
+    }
+
+    /* Search container styles */
+    .search-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+    }
+
+    .search-bar {
+      border: none;
+      outline: none;
+      padding: 10px;
+      width: 200px;
+      font-size: 16px;
+      border-radius: 20px;
+      margin-right: 5px;
+    }
+
+    .search-btn {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      padding: 10px;
+      border-radius: 50%;
+      cursor: pointer;
+      font-size: 18px;
+    }
+
+    .search-btn:hover {
+      background-color: #45a049;
+    }
+
+    /* Heading styles */
+    h1, h3 {
+      text-align: center;
+      color: #333;
+    }
+
+    h3 {
+      margin-top: 10px;
+    }
+
+    /* Address styling */
+    p {
+      text-align: center;
+      font-size: 16px;
+      color: #666;
+    }
+
+    /* Navigation bar layout fixes */
+    ul {
+      background-color: #333;
+    }
+
+    li {
+      display: inline;
+    }
+
+    li a {
+      padding: 14px 20px;
+    }
+
+    /* Content container */
+    .content {
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Page Title -->
+  <h1>Off The Pike</h1>
+
+  <!-- Search Bar Section -->
+  <div class="search-container">
+    <input type="text" class="search-bar" placeholder="Search...">
+    <button class="search-btn">🔍</button>
+  </div>
+
+  <!-- Business Information Section -->
+  <div class="content">
+    <h3>Arlington Career Center</h3>
+    <p>📍 816 S. Walter Reed Drive, Arlington, VA</p>
+  </div>
+
+  <!-- Navigation Menu -->
+  <ul>
+    <li><a class="active" href="index.html">Home</a></li>
+    <li><a href="menu.html">Menu</a></li>
+    <li><a href="order.html">Order</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="contactus.html">Contact</a></li>
+    <li><a href="aboutus.html">About</a></li>
+  </ul>
+</body>
 </html>
+
