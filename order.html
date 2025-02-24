@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<header>
+<head>
   <title>Order here!</title>
   <script src="js/init.js"></script>
   <link rel="stylesheet" type="text/css" href="styles.css">
-</header>
+</head>
 
 <body>
   <h1>Your order 🛒</h1>
   <h2>Please fill out this form for your order!</h2>
 
   <form action="https://httpbin.org/post" method="POST">
-    <label for="email">What is your email address?</label><br>
+    <p>What is your email address?</p>
     <input type="email" id="email" name="email" required><br><br>
 
-    <label for="number">What is your phone number?</label><br>
+    <p>What is your phone number?</p>
     <input type="tel" id="number" name="number" required><br><br>
 
-    <label for="entrees">Select your choice of entree:</label><br>
+    <p>Select your choice of entree:</p>
     <input type="checkbox" id="salmon" name="entrees" value="salmon">
     <label for="salmon">Baked Salmon</label><br>
     <input type="checkbox" id="shrimp_taco" name="entrees" value="shrimp_taco">
@@ -30,7 +30,7 @@
     <input type="checkbox" id="tenders" name="entrees" value="tenders">
     <label for="tenders">Chicken Tenders</label><br><br>
 
-    <label for="sides">Include your choice of two sides:</label><br>
+    <p>Include your choice of two sides:</p>
     <input type="checkbox" id="asparagus" name="sides" value="asparagus">
     <label for="asparagus">Grilled Asparagus</label><br>
     <input type="checkbox" id="vegetables" name="sides" value="vegetables">
@@ -44,13 +44,13 @@
     <input type="checkbox" id="garlic" name="sides" value="garlic">
     <label for="garlic">Garlic and Rosemary Red Potatoes</label><br><br>
 
-    <label for="desserts">Any desserts?</label><br>
+    <p>Any desserts?</p>
     <input type="checkbox" id="cookies" name="desserts" value="cookies">
     <label for="cookies">Cookies and Cream</label><br>
     <input type="checkbox" id="cake" name="desserts" value="cake">
     <label for="cake">Strawberry Shortcake</label><br><br>
 
-    <label for="drinks">Want drinks?</label><br>
+    <p>Want drinks?</p>
     <input type="checkbox" id="coke" name="drinks" value="coke">
     <label for="coke">Coke</label><br>
     <input type="checkbox" id="diet" name="drinks" value="diet">
