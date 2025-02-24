@@ -1,4 +1,10 @@
-body{
-    background-color: #677667;
-    font-family: Arial, sans-serif;
+@font-face {
+    font-family: "MyCustomFont";
+    src: url("../beautiful-people-font/BeautifulPeoplePersonalUse-dE0g.ttf") format("truetype");
 }
+
+body {
+    background-color: #677667;
+    font-family: "MyCustomFont", sans-serif; 
+}
+
