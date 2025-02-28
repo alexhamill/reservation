@@ -1,9 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Order</title>
-    </head>
-    <body>
 
-    </body>
+<head>
+  <title>Order here!</title>
+  <script src="js/init.js"></script>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+  <h1>Your order 🛒</h1>
+  <h2>Please fill out this form for your order!</h2>
+
+  <form action="https://httpbin.org/post" method="POST">
+    <p>What is your email address?</p>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <p>What is your phone number?</p>
+    <input type="tel" id="number" name="number" required><br><br>
+
+    <p>Select your choice of entree:</p>
+    <input type="checkbox" id="salmon" name="entrees" value="salmon">
+    <label for="salmon">Baked Salmon</label><br>
+    <input type="checkbox" id="shrimp_taco" name="entrees" value="shrimp_taco">
+    <label for="shrimp_taco">Bang Bang Shrimp Taco</label><br>
+    <input type="checkbox" id="cauli_taco" name="entrees" value="cauli_taco">
+    <label for="cauli_taco">Bang Bang Cauliflower Tacos</label><br>
+    <input type="checkbox" id="tuscan" name="entrees" value="tuscan">
+    <label for="tuscan">Creamy Tuscan Chicken</label><br>
+    <input type="checkbox" id="tenders" name="entrees" value="tenders">
+    <label for="tenders">Chicken Tenders</label><br><br>
+
+    <p>Include your choice of two sides:</p>
+    <input type="checkbox" id="asparagus" name="sides" value="asparagus">
+    <label for="asparagus">Grilled Asparagus</label><br>
+    <input type="checkbox" id="vegetables" name="sides" value="vegetables">
+    <label for="vegetables">Roasted Mixed Vegetables</label><br>
+    <input type="checkbox" id="brussel" name="sides" value="brussel">
+    <label for="brussel">Brussel Sprouts with Candied Bacon</label><br>
+    <input type="checkbox" id="rice" name="sides" value="rice">
+    <label for="rice">Yellow Rice</label><br>
+    <input type="checkbox" id="potatoes" name="sides" value="potatoes">
+    <label for="potatoes">Baked Sweet Potatoes</label><br>
+    <input type="checkbox" id="garlic" name="sides" value="garlic">
+    <label for="garlic">Garlic and Rosemary Red Potatoes</label><br><br>
+
+    <p>Any desserts?</p>
+    <input type="checkbox" id="cookies" name="desserts" value="cookies">
+    <label for="cookies">Cookies and Cream</label><br>
+    <input type="checkbox" id="cake" name="desserts" value="cake">
+    <label for="cake">Strawberry Shortcake</label><br><br>
+
+    <p>Want drinks?</p>
+    <input type="checkbox" id="coke" name="drinks" value="coke">
+    <label for="coke">Coke</label><br>
+    <input type="checkbox" id="diet" name="drinks" value="diet">
+    <label for="diet">Diet Coke</label><br>
+    <input type="checkbox" id="sprite" name="drinks" value="sprite">
+    <label for="sprite">Sprite</label><br>
+    <input type="checkbox" id="strawberry" name="drinks" value="strawberry">
+    <label for="strawberry">Strawberry Freckled</label><br>
+    <input type="checkbox" id="lemonade" name="drinks" value="lemonade">
+    <label for="lemonade">Lemonade</label><br><br>
+
+    <button value="submit">Submit</button>
+    <button type="reset">Reset</button>
+  </form>
+
+  <h2>You can pay through cash, venmo, and checks (payable: Arlington Career Center)</h2>
+
+</body>
+
 </html>
