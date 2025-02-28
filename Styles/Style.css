@@ -1,10 +1,12 @@
 @font-face {
     font-family: "MyCustomFont";
-    src: url("../beautiful-people-font/BeautifulPeoplePersonalUse-dE0g.ttf") format("truetype");
+    src: url("../fonts/transcity/Transcity\ DEMO.otf") format("truetype");
+    
 }
 
 body {
     background-color: #677667;
     font-family: "MyCustomFont", sans-serif; 
+    font-size: 1.5em;
 }
 
