@@ -1,9 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Menu</title>
-    </head>
-    <body>
-
-    </body>
+        <title>off the pike menu</title>
+	<script src="../js/init.js"></script>
+	<link rel="stylesheet" href="styles.css">
+	<style>
+		h1 { 
+			color: lightseagreen;
+			font-size: 40px;
+			background-color: lightblue;
+			border-style: solid;
+			border-size: 2px;
+}
+		hr { 
+			background-color: lightblue;
+			height: 5px;
+}
+		body { 
+			background-color: ghostwhite;
+}
+		img { 
+			border-style: solid;
+			border-color: lightseagreen;
+			border-width: 5px;
+			
+	</style>
+	</head>
+	<body>
+	   <h1>Entrees</h1>
+		<hr>
+		<div class="entree_grid">
+			<div class="tenders">
+			<img id="tenders" src="tenders.jpg" alt="off the pike chicken tenders.">
+			</div>
+			<div class="bakedsalmon">
+			<img id="bakedsalmon" src="bakedsalmon.jpg" alt="off the pike baked salmon!">
+			</div>
+			<div class="cauliflowertacos">
+			<img id="cauliflowerstacos" src="cauliflowertacos.jpg" alt="off the pike cauliflower tacos.">
+			</div>
+		        <div class="shrimptacos">
+			<img id="shrimptacos" src="shrimptacos.jpg" alt="off the pike shrimp tacos!">
+			</div>
+			<div class="tuscanchicken">
+			<img id="tuscanchicken" src="tuscanchicken.jpg" alt="off the pike tuscan chicken.">
+			</div>
+		</div>
+		<br>
+		<form action="https://httpbin.org/post" method="post">
+			<label for="message">recipes you want to see us make?:</label><br>
+			<textarea id="message" name="message"></textarea><br>
+			<input type="submit" value="submit!">
+		</form>
+	</body>
 </html>
