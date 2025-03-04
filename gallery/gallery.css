@@ -1,0 +1,59 @@
+
+.grid_wrapper {
+	display:grid;
+	grid-template-columns: auto auto;
+	grid-gap: 50px;
+	grid-template-rows: 600px 600px;
+}
+
+#girl {
+	object-fit: cover;
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+	border-style: solid;
+	border-color: lightseagreen;
+	border-width: 9px;
+}
+
+#girl2 { 
+	object-fit: cover;
+	overflow: hidden;
+	width: 100%;
+	height: 100%; 
+	border-style: solid;
+	border-color: lightseagreen;
+	border-width: 9px;
+} 
+
+#man { 
+	object-fit: cover;
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+	border-style: solid;
+	border-color: lightseagreen;
+	border-width: 9px;
+}
+
+#group { 
+	object-fit: cover;
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+	border-style: solid;
+	border-color: lightseagreen;
+	border-width: 9px;
+	margin-left: 300px;
+	
+}
+
+h1 { 
+	color: darkslateblue;
+	font-size: 80px;
+	border-style: dotted;
+	background: lightsteelblue;
+	border-color: mediumpurple;
+	text-align: center;
+	border-width: 5px;
+}
